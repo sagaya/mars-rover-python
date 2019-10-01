@@ -2,7 +2,6 @@ from .position import Position
 
 
 class Rover(object):
-    # TODO: active available commands and execute key values
     AVAILABLE_COMMANDS = {
         'M': 'move',
         'L': 'turn_left',
@@ -69,7 +68,7 @@ class Rover(object):
         elif 'M' == command:
             if not self.move():
                 print("Where are you trying to go?")
-        else:  # Unrecognized instruction
+        else:  
             print("Wrong parameters!..")
 
     def move(self):
